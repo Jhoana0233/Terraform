@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     bash \
   && rm -rf /var/lib/apt/lists/*
-
+ENV DEBIAN_FRONTEND=noninteractive
 # crear usuario no-root
 RUN useradd --create-home --shell /bin/bash appuser
 

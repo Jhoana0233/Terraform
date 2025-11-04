@@ -5,6 +5,7 @@ LABEL maintainer="docente@example.org"
 
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
+ENV DEBIAN_FRONTEND=noninteractive
 
 # instalar utilidades mínimas
 RUN apt-get update && apt-get install -y --no-install-recommends \
